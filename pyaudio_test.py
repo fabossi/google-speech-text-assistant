@@ -38,3 +38,8 @@ wf.setsampwidth(p.get_sample_size(FORMAT))
 wf.setframerate(RATE)
 wf.writeframes(b''.join(frames))
 wf.close()
+
+# If Mycrophone is not fine
+# Quite vscode and execute this 
+# command in your linux / macOs terminal => 
+# sudo /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron

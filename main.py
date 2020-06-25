@@ -49,6 +49,11 @@ def respond(voice_data):
         url = 'https://google.com/search?q=' + search
         webbrowser.get().open(url)
         print('Here is what I found for ' + search)
+    if 'find location' in voice_data:
+        location = record_audio('What is the location ? ')
+        url = 'https://google.nl/maps/place/' + location + '/&amp'
+        webbrowser.get().open(url)
+        print('Here is the location of ' + location)
 
 
 print('How can I help you ? ')

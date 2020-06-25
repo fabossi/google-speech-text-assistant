@@ -27,6 +27,8 @@ Search
 
 Find Location
 
+Nice to meet you
+
 Exit
 
 ### Apple Mac OS X (Homebrew & PyAudio)

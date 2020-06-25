@@ -38,10 +38,10 @@ def record_audio(ask=False):
 
         except sr.UnknownValueError:
             alexis_speak(
-                "Google Speech Recognition could not understand audio")
+                "Sorry, could you repeat, please?")
         except sr.RequestError as e:
             alexis_speak(
-                "Could not request results from Google Speech Recognition service; {0}".format(e))
+                "Sorry, I have some problems to solve now, try again later; {0}".format(e))
         return voice_data
 
 
@@ -57,7 +57,9 @@ def alexis_speak(audio_string):
 
 def respond(voice_data):
     if 'what is your name' in voice_data:
-        alexis_speak('My name is Camila')
+        alexis_speak('My name is Camila, nice too meet you!')
+    if 'nice to meet you too' in voice_data:
+        alexis_speak('thanks, so, how can I help you? ')
     if 'What time is it' in voice_data:
         alexis_speak(ctime())
     if 'search' in voice_data:

@@ -14,7 +14,7 @@ r = sr.Recognizer()
 
 def record_audio(ask=False):
 
-    # This is to see wich microhone im using
+    # This is to see wich microhone my computer have
 
     for i in range(p.get_device_count()):
         info = p.get_device_info_by_index(i)
@@ -57,7 +57,7 @@ def alexis_speak(audio_string):
 
 def respond(voice_data):
     if 'what is your name' in voice_data:
-        alexis_speak('My name is Alexis')
+        alexis_speak('My name is Camila')
     if 'What time is it' in voice_data:
         alexis_speak(ctime())
     if 'search' in voice_data:

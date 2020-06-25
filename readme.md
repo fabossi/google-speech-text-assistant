@@ -32,7 +32,9 @@ Exit
 ### Apple Mac OS X (Homebrew & PyAudio)
 Use Homebrew to install the prerequisite portaudio library, then install PyAudio using pip:
 
-brew install portaudio pip install pyaudio
+brew install portaudio 
+
+pip install pyaudio
 
 ### Notes 1.0:
 
